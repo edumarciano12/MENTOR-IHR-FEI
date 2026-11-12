@@ -1,361 +1,314 @@
-> [!IMPORTANT]
-> Cada seção tem dois tipos de bloco de apoio, que **devem ser apagados** antes da entrega final — o README entregue deve conter só o texto do grupo:
-> - **💡 (Dica)** — o que escrever nessa seção, com base nas aulas de IHR.
-> - **📄 (Exemplo)** — um exemplo preenchido, de um robô fictício ("Rumo", robô guia da FEI para o FEI Portas Abertas), só para ilustrar o **nível de detalhe e o formato** esperados.
+# MENTOR: Robô instrutor para o treinamento de novos operadores de máquinas
 
-
-# **<Nome do Robô>:** <Aplicação do robô>
-
-Trabalho de Interação Humano-Robô (IHR) apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), como parte dos requisitos necessários para aprovação na disciplina de Interação Humano-Robô (IHR) (CCR230) do curso de Engenharia de Robôs, orientado pelo Prof. Dr. [Fagner de Assis Moura Pimentel](https://github.com/fagnerpimentel).
+Trabalho de Interação Humano-Robô (IHR) apresentado ao Centro Universitário FEI, como parte das atividades da disciplina Interação Humano-Robô (CCR230), sob orientação do Prof. Dr. Fagner de Assis Moura Pimentel.
 
 ## Componentes do Grupo
 
-> 💡 Adicione os nomes e RAs dos integrantes
-> - Nome - RA
-> - Nome - RA
-> - Nome - RA
+- **Lucas Nicolini** — RA: 11.219.047-5
+- **Thiago Wuo** — RA: 11.120.266-9
+
+> **Sobre o projeto:** o Mentor é uma proposta conceitual baseada na apresentação do grupo, *Mentor_IHR.pptx*. Os recursos descritos são planejados, não funcionalidades já implementadas. Algumas explicações foram acrescentadas para atender ao template da disciplina.
 
 ## Resumo
 
-> 💡
-> Apresente uma breve descrição do seu robô e sua aplicação (tarefa que ele irá resolver).
+O **Mentor** é um robô móvel criado para ajudar no treinamento de novos operadores de torno CNC. Ele fica em uma sala de treinamento de uma fábrica de autopeças no ABC Paulista e acompanha o aprendiz durante as atividades na máquina real. Por meio de voz, tablet, gestos e projeção de luz, mostra cada etapa, ajuda na conferência dos EPIs e permite repetir explicações sem constrangimento.
 
-<details>
-<summary>📄</summary>
-
-O Rumo é um robô recepcionista para o FEI Portas Abertas. Ele acolhe os visitantes no saguão de entrada, apresenta rapidamente os cursos oferecidos e guia grupos até o laboratório de interesse, reduzindo a fila de espera por monitores humanos nos horários de pico.
-
-</details>
+A proposta é tornar o aprendizado mais seguro e padronizado, sem perder o contato humano. O Mentor não opera o torno nem substitui seus sistemas de proteção. **O instrutor continua responsável pela avaliação final do aprendiz.**
 
 ## Introdução
 
-> 💡
-> - Apresente uma contextualização para o problema que o seu robô irá resolver e por quê esse tipo de robô é necessário hoje na sociedade.
-> - Apresente uma breve descrição do seu robô e sua aplicação (tarefa que ele irá resolver).
-> - Em uma única frase, resuma o objetivo do seu robô.
-> - Que tipo de experiência o robô deve proporcionar para os usuários?
+### Conhecendo o problema — Entrega 1
 
-<details>
-<summary>📄</summary>
+Treinar um novo operador exige tempo, atenção e experiência. No cenário apresentado pelo grupo, três problemas se destacam: há poucos instrutores disponíveis, cada profissional pode ensinar de um jeito diferente e alguns aprendizes têm vergonha de perguntar novamente quando não entendem uma etapa.
 
-Todo ano a FEI recebe centenas de visitantes no FEI Portas Abertas, mas há poucos monitores voluntários disponíveis nos horários de pico — visitantes ficam perdidos no saguão ou esperando muito tempo por orientação. O Rumo é um robô móvel com tela e um braço apontador que recebe visitantes na portaria, apresenta um menu de destinos (curso, laboratório, auditório) e os guia até lá, verificando se o grupo continua acompanhando.
+Essa dificuldade se torna ainda mais importante diante de máquinas como o torno CNC. A **NR-12** trata da segurança no trabalho com máquinas e equipamentos e estabelece requisitos de capacitação. Por isso, o Mentor foi pensado como um **apoio ao treinamento**, e não como substituto do ensino formal, da supervisão ou das proteções da máquina.
 
-**Objetivo em uma frase:** ajudar visitantes do FEI Portas Abertas a encontrar, sem depender de um monitor humano, o curso e o laboratório que querem conhecer.
+O robô acompanha exercícios em uma sala com torno CNC, bancada e armário de EPIs. Ele apresenta instruções em etapas, aponta controles e destaca regiões da máquina com luz. O aprendiz faz a atividade no próprio ritmo; quando surge uma situação fora do roteiro, o Mentor chama o instrutor.
 
-**Experiência desejada:** acolhedora, confiável e levemente lúdica — sem intimidar quem nunca interagiu com um robô antes.
+**Objetivo geral:** apoiar o treinamento inicial de operadores de torno CNC de forma segura, clara e adaptada ao ritmo de cada pessoa.
 
-</details>
+**Experiência desejada:** um instrutor paciente, que não julga o aprendiz e permite repetir a explicação quantas vezes forem necessárias.
+
+### Identificação e descrição do projeto
+
+| Item | Definição |
+|---|---|
+| Nome | **MENTOR** |
+| Aplicação | Treinamento assistido de novos operadores de torno CNC |
+| Ambiente | Sala de treinamento em fábrica de autopeças no ABC Paulista |
+| Tipo | Robô móvel instrutor, com aparência minimalista |
+| Usuário principal | Aprendiz de operação CNC |
+| Papel do instrutor | Validar os procedimentos, resolver dúvidas complexas e realizar a avaliação final |
+| Limite do robô | Não comanda o torno nem substitui os dispositivos de segurança ou a capacitação exigida |
+
+### Objetivos específicos
+
+1. Apresentar procedimentos de operação divididos em etapas claras.
+2. Orientar a conferência dos EPIs previstos para cada atividade.
+3. Mostrar os componentes da máquina por meio de gestos, tablet e projeção luminosa.
+4. Permitir que o aprendiz repita instruções e tire dúvidas previstas no roteiro.
+5. Combinar interações espaciais, verbais e não verbais de modo simples e seguro.
+6. Preservar a privacidade do aprendiz e manter a decisão final com o instrutor.
+
+### Benefícios esperados
+
+- **Para o aprendiz:** aprender no próprio ritmo, perguntar sem vergonha e receber orientações visuais mais fáceis de acompanhar.
+- **Para o instrutor:** ter mais tempo para dúvidas difíceis, acompanhamento individual e avaliação prática.
+- **Para a fábrica:** tornar as explicações mais consistentes e organizar melhor as etapas do treinamento.
+
+São benefícios esperados da proposta; ainda não foram medidos em testes.
+
+### Funcionalidades previstas
+
+- **Identificação por crachá:** reconhece o aprendiz e recupera o módulo em andamento.
+- **Conferência de EPI:** informa quais equipamentos devem ser usados e pede a confirmação do aprendiz. No exemplo do torno, lembra que luvas não devem ser usadas perto de partes girantes quando houver risco de enroscamento.
+- **Orientação passo a passo:** explica a etapa por voz, mostra o texto no tablet e projeta luz no componente indicado.
+- **Acompanhamento:** observa a execução e consulta os estados autorizados do CNC, quando disponíveis.
+- **Correção:** explica erros previstos no roteiro, com calma, e oferece nova demonstração.
+- **Ajuda humana:** chama o instrutor quando há dúvida fora do conteúdo ou quando o módulo termina.
+- **Parada do robô:** possui botão para interromper seus próprios movimentos, diferente da parada de emergência do torno.
+
+### Tecnologias e ferramentas propostas
+
+| Componente | Recurso previsto | Função |
+|---|---|---|
+| Locomoção | Base móvel diferencial e sensores de obstáculos | Deslocar-se apenas nas áreas permitidas da sala |
+| Visão | Câmera RGB-D | Perceber a presença do aprendiz e acompanhar a atividade |
+| Gestos | Braço de 2 graus de liberdade, sem garra | Apontar sem tocar na máquina |
+| Orientação visual | Projetor e tablet de aproximadamente 10 polegadas | Indicar o controle certo e apresentar as instruções |
+| Identificação | Leitor de crachá | Iniciar ou retomar a sessão do aprendiz |
+| Comunicação | Voz, comandos curtos, botões e legendas | Permitir interação mesmo com ruído e protetor auricular |
+| Consulta à máquina | Leitura autorizada de estados do CNC | Informar o contexto da etapa, sem acionar a máquina |
+| Controle do treinamento | Roteiro fechado com etapas previamente aprovadas | Evitar instruções improvisadas ou incorretas |
+| Prototipagem | Croqui técnico e fluxos de interação | Representar a proposta antes de uma implementação física |
 
 ## Público-Alvo e Stakeholders
 
-> 💡
-> Determine o seu público alvo.
+O público principal são **operadores recém-contratados ou em mudança de função**, entre 18 e 55 anos, com diferentes níveis de experiência. Muitos conhecem a teoria, mas ainda não tiveram contato prático com um torno CNC. O Mentor deve acompanhar essa fase de aprendizado sem pressa.
 
 ### Stakeholders
 
-> 💡
-> Identifique os **stakeholders** do projeto — todos os envolvidos e afetados pelo robô, mesmo sem interagir diretamente com ele:
-> - **Primários** — usam o robô diretamente.
-> - **Secundários** — têm contato intermitente com o robô ou interagem com ele por meio de um intermediário.
-> - **Terciários** — são afetados pelo robô (positiva ou negativamente) sem necessariamente interagir com ele.
+| Categoria | Envolvidos | Interesse e possível impacto |
+|---|---|---|
+| **Primários** | Aprendizes | Consultam explicações, executam exercícios, recebem feedback e repetem etapas |
+| **Secundários** | Instrutores, técnicos de segurança e manutenção | Validam conteúdos, respondem a exceções, supervisionam uso e cuidam da disponibilidade dos sistemas |
+| **Terciários** | RH, gerência, CIPA, sindicato e demais operadores | São afetados por políticas de capacitação, trabalho, confiança e uso de dados, mesmo sem operar o robô |
 
-<details>
-<summary>📄</summary>
+### Personas — Entrega 3
 
-- **Primários** — visitantes (futuros alunos e famílias) que pedem informações e são guiados pelo robô.
-- **Secundários** — recepcionistas e seguranças da portaria, que cruzam com o robô no saguão e ocasionalmente o auxiliam.
-- **Terciários** — coordenadores de curso, cujo número de inscrições pode ser afetado pela impressão (boa ou ruim) que o robô causa nos visitantes.
+**Thiago, 20 anos — aprendiz (persona primária).** Fez curso técnico em mecânica e está no primeiro emprego. Sabe a teoria, mas nunca operou um CNC. Quer ser efetivado e tem vergonha de pedir para repetir uma explicação. Com o Mentor, ele pode aprender e tirar dúvidas sem se sentir julgado.
 
-</details>
+**Seu Valdir, 57 anos — instrutor (persona secundária).** Tem 30 anos de fábrica, conhece os detalhes do trabalho e está sobrecarregado com turmas grandes. Ele desconfia do robô e teme ser substituído. Para conquistar sua confiança, o Mentor deve deixar claro que **a experiência do instrutor continua essencial**.
 
-### Personas
-
-> 💡
-> - Descreva as personas que irão interagir com o robô. Deixe claro suas principais características e contextos sociais, econômicos e culturais.
-> - Quais informações sobre o usuário o robô deve saber antes de iniciar a tarefa?
-
-- Persona primária ...
-- Persona secundária ...
-- Outras personas ...
-
-<details>
-<summary>📄</summary>
-
-- **Persona primária — Ana, 17 anos:** aluna do 3º ano do ensino médio, indecisa entre Engenharia de Robôs e Ciência da Computação, visita a FEI pela primeira vez acompanhada da mãe. Não sabe onde fica nenhum laboratório.
-- **Persona secundária — Sr. Carlos, 50 anos:** pai de Ana, mais cético em relação a tecnologia, preocupado com o custo do curso e a empregabilidade; tende a fazer perguntas objetivas e desconfia de recomendações "automáticas".
-
-</details>
+**O que o robô precisa saber:** identificação pelo crachá, etapa do treinamento, progresso do aprendiz e eventuais necessidades de acessibilidade, como legendas para quem tem baixa audição. Não precisa registrar sentimentos nem informações pessoais desnecessárias.
 
 ### Mapa de empatia
 
-![Mapa de empatia](empatia.png)
-
-> 💡
-> Determine o mapa de empatia[^1] de pelo menos uma persona primária e uma secundária.
-> - O que o usuário vê: aqui estamos falando do ambiente visual em que o usuário se encontra. Ou seja, o que ele efetivamente enxerga, as pessoas e objetos que estão ao seu redor. Isso ajuda a entender o contexto em que o usuário está inserido e as influências visuais que está recebendo.
-> - O que o usuário ouve: neste quadrante, buscamos entender o que o usuário está ouvindo, os sons que o cercam e como eles influenciam suas ações.
-> - O que o usuário diz e faz: aqui consideramos ações e comportamentos que o usuário apresenta durante sua interação com o robô.
-> - O que o usuário pensa e sente: neste quadrante, buscamos entender os pensamentos, sentimentos, emoções e percepções que o usuário tem em relação robô. Quais expectativas o usuário cria sobre o robô? Que tipo de robô mais agrada essa persona?
-> - Dores: quando falamos sobre dores do usuário, estamos fazendo referência a quaisquer obstáculos, necessidades ou frustrações que o usuário possa experimentar ao tentar realizar uma tarefa ou alcançar um objetivo. Isso inclui, por exemplo, problemas de usabilidade, dificuldades de acesso ou outros desafios que podem afetar a experiência do usuário.
-> - Ganhos: nesse caso estamos falando de quaisquer benefícios ou recompensas que o usuário possa experimentar ao utilizar o robô. Isso pode incluir economia de tempo ou facilidade de uso, por exemplo. Que desejos do usuário o robô satisfaz?
-
-<details>
-<summary>📄 (persona: Ana)</summary>
-
-- **Vê:** banners coloridos, estudantes de jaleco, placas de curso, o robô Rumo se movendo pelo saguão.
-- **Ouve:** música ambiente do evento, outros visitantes conversando, um monitor anunciando horários de palestras.
-- **Diz e faz:** pergunta "onde fica o laboratório de robótica?", tira foto do robô, segue meio hesitante quando ele começa a andar.
-- **Pensa e sente:** ansiosa por decidir a faculdade certa, curiosa e um pouco encantada com o robô, insegura se vai dar conta do curso.
-- **Dores:** medo de escolher a faculdade errada; vergonha de fazer perguntas "óbvias" para um humano.
-- **Ganhos:** sente-se acolhida sem julgamento ao perguntar ao robô; economiza tempo achando o laboratório sozinha.
-
-</details>
+| Dimensão | Thiago — aprendiz | Valdir — instrutor |
+|---|---|---|
+| **Vê** | Máquinas grandes, avisos sobre EPI e operadores experientes trabalhando rapidamente | Turmas maiores, novas ferramentas digitais e a chegada de um robô |
+| **Ouve** | Ruído da fábrica e brincadeiras direcionadas ao novato | Comentários da gerência sobre custos e produtividade |
+| **Diz e faz** | Diz “entendi” mesmo com dúvida; procura vídeos no celular para revisar conceitos | Afirma “robô não ensina macete”; testa a coerência das explicações |
+| **Pensa e sente** | Ansiedade para ser efetivado e receio de causar acidente | Orgulho do ofício, sobrecarga e receio de perder seu papel |
+| **Dores** | Vergonha de perguntar novamente; pouca experiência prática | Pouco tempo para atenção individual; sensação de desvalorização |
+| **Ganhos** | Repetição no próprio ritmo, orientação visível e possibilidade de erro sem julgamento | Mais tempo para situações difíceis e controle sobre a avaliação final |
 
 ## Contexto de uso
 
-> 💡
-> - Descreva o ambiente em que o robô interage com os usuários
-> - Qual/quais o(s) contexto(s) sociais, econômicos e culturais existentes neste ambiente?
-> - Quais informações sobre o ambiente o robô deve saber antes de iniciar a tarefa?
+O cenário é uma **sala de treinamento de fábrica de autopeças no ABC Paulista**, localizada próxima à linha de produção. O espaço contém um torno CNC, uma bancada, armário de EPIs e área demarcada de circulação. Ainda que seja destinado ao ensino, o ambiente está sujeito a ruído de produção, uso de protetor auricular e trânsito de empilhadeiras no corredor adjacente. A circulação do Mentor não deve interferir com rotas logísticas nem aproximá-lo de zonas de risco da máquina.
 
-<details>
-<summary>📄</summary>
+Na região, o tema **automação e emprego** também merece cuidado. O Mentor deve se apresentar como um apoio para aprendizes e instrutores, e não como um substituto do trabalhador experiente.
 
-Saguão de entrada e corredores do prédio principal da FEI, durante o FEI Portas Abertas (evento de um único dia, com alta lotação). O ambiente é barulhento e há vários grupos de visitantes circulando ao mesmo tempo, muitos acompanhados de monitores humanos. O robô precisa saber, antes de começar, o mapa dos laboratórios abertos naquele dia e quais estão temporariamente fechados.
+**Informações necessárias:** mapa da sala e de suas áreas de risco, posição da bancada e do armário, procedimentos divididos em etapas, EPIs de cada atividade, estados do CNC disponibilizados para consulta e forma de chamar o instrutor.
 
-</details>
+**Antes de começar:** o aprendiz deve estar identificado, o exercício precisa estar autorizado e a máquina deve estar em condição segura. Quando isso não ocorre, o Mentor não continua o treinamento e solicita ajuda humana.
 
 ## Jornada do usuário
 
-> 💡
-> - Criar uma narrativa para o o seu robô e o usuário.
-> - Determine o passo a passo que o usuário realiza desde o primeiro até o último encontro com robô na realização da tarefa.
-> - O que está acontecendo com o ambiente quando o robô está interagindo com o usuário?
->   - Descreva o que acontece ou pode acontecer passo a passo
->   - Como a tarefa começa? Como a tarefa evolui? Como a tarefa termina?
-> - Enfatize todos os momentos em que acontece uma interação verbal, não-verbal e espacial.
+A narrativa acompanha **Thiago** em seu primeiro módulo de prática guiada no torno CNC. As letras indicam os canais de interação: **E** = espacial; **V** = verbal; **NV** = não verbal.
 
-<details>
-<summary>📄</summary>
+| Momento | Acontecimento e contexto | Interação IHR | Resultado pretendido |
+|---|---|---|---|
+| **1. Chegada** | Thiago entra na sala, se identifica no leitor de crachá e observa o torno. O Mentor se posiciona de frente e aproxima-se lentamente, mantendo cerca de **1,5 m**. | E, NV | Evitar susto; indicar disponibilidade e reconhecer o início do atendimento |
+| **2. Apresentação** | O robô confirma a identidade e diz: “Oi, Thiago! Eu sou o Mentor. Eu mostro, você faz.” A tela apresenta o módulo. | V, NV | Reduzir incerteza e explicar os limites de cada participante |
+| **3. Conferência de EPI** | O Mentor solicita a verificação dos EPIs aplicáveis e do estado seguro da tarefa. No exemplo apresentado, orienta retirar a luva quando houver risco junto a partes girantes, apontando para o armário. | V, NV | Reforçar o procedimento e solicitar validação antes do avanço |
+| **4. Demonstração** | Com o CNC em condição adequada ao passo, o robô se posiciona em **formação em “L”**, aproximadamente a **1 m** do aprendiz, sem bloquear sua visão ou acesso seguro. Aponta e ilumina o controle relevante. | E, V, NV | Estabelecer atenção conjunta sobre um único ponto |
+| **5. Vez do aprendiz** | Thiago realiza a ação prevista, enquanto o robô permanece em silêncio, evitando distrações. Se a etapa for confirmada, a expressão da cabeça e o LED indicam aprovação. | NV | Dar autonomia com feedback de fácil interpretação |
+| **6. Dúvida ou erro** | Se houver uma divergência reconhecida pelo roteiro, o Mentor informa calmamente o que precisa ser revisado. Se não compreender o evento, suspende a orientação e chama o instrutor. | V, E, NV | Corrigir sem humilhação e evitar improvisações perigosas |
+| **7. Encerramento** | O robô resume os passos revisados, oferece a consulta ao histórico de módulos e solicita a presença do instrutor para avaliação final. | V, NV | Encerrar de modo claro, sem confundir conclusão de módulo com certificação |
 
-1. Ana e o pai entram no saguão e ficam parados olhando ao redor, sem saber para onde ir.
-2. O Rumo percebe o grupo parado (sinal de "perdido") e se aproxima devagar, pela frente, mantendo distância social *(espacial)*.
-3. O robô pergunta "Posso ajudar vocês a encontrar algum curso ou laboratório?" e mostra um menu de ícones na tela *(verbal)*.
-4. Ana toca em "Engenharia de Robôs"; o robô confirma e começa a andar, olhando de tempos em tempos para trás para checar se o grupo o segue *(espacial + não-verbal)*.
-5. No corredor, o robô encontra duas pessoas conversando e contorna sem passar entre elas *(espacial)*.
-6. Ao chegar no laboratório, o robô se vira de frente para o grupo, inclina levemente a "cabeça" e deseja uma boa visita *(não-verbal)*.
+**Se algo sair do previsto:** o tablet substitui a voz quando houver ruído; o robô espera se o aprendiz precisar de mais tempo; a projeção é desativada se não estiver alinhada; ele aguarda a passagem de empilhadeiras e chama o instrutor quando não consegue confirmar uma condição necessária.
 
-</details>
+## Análise de concorrência — Entrega 2
 
-## Análise de concorrência
+O diferencial do Mentor é reunir um **robô presente na sala**, a **prática no CNC real** e a **projeção de instruções diretamente na máquina**. Para avaliar a ideia, comparamos três plataformas robóticas e as alternativas de treinamento apresentadas pelo grupo. Nenhuma delas foi identificada como um produto pronto com todas as funções propostas para o Mentor.
 
-> 💡
-> - Pesquise robôs existentes atualmente que possam fazer a tarefa deste projeto.
-> - Selecione pelo menos 3 robôs diferentes que podem fazer essa tarefa.
-> - Em relação aos concorrentes, respondam as seguintes perguntas:
->   - Existe plataforma similar que atende o mesmo mercado e funcionalidades? Se sim: Quais os pontos positivos? Quais os pontos negativos?
->   - Existe plataforma diferente quanto ao serviço, mas que atenda esse mercado? Se sim: Quais os pontos positivos? Quais os pontos negativos?
->   - Quais plataformas sua equipe acha mais interessantes? Qual a justificativa?
+### Principais plataformas robóticas e características
 
-<details>
-<summary>📄</summary>
+| Robô | Capacidades relevantes | Pontos positivos para UX | Limitações no cenário CNC | Modelo de aquisição/preço |
+|---|---|---|---|---|
+| **Baxter** — Rethink Robotics, referência de pesquisa | Robô com braços, tela/rosto e feedback verbal/gestual, empregado em pesquisa de ensino de montagem industrial | Demonstração corporal concreta; evidência acadêmica de uso como instrutor | Plataforma de pesquisa anterior, não solução comercial atual pronta para esse treinamento; manipulação não é necessária ao Mentor | Referência histórica de pesquisa; **não há preço comercial atual comparável** |
+| **temi V3 / temi Platform** | Mobilidade autônoma, interação por tela/áudio, recursos de programação e serviços | Possibilidade de receber usuário e apresentar módulos ao lado do posto | Não inclui, pronta para uso, projeção de instruções em torno CNC, braço apontador ou validação de procedimento da máquina | Plataforma comercial/RaaS ou compra conforme oferta; custo total depende de customização, licenças e suporte; **sem orçamento comparável verificado** |
+| **TIAGo / TIAGo Pro — PAL Robotics** | Plataforma móvel de pesquisa com percepção, HRI, braço(s) e opções de touchscreen | Forte potencial de prototipagem de gestos, navegação e acompanhamento de tarefa | Mais complexidade e recursos de manipulação do que o Mentor requer; integração com o CNC teria de ser desenvolvida | Venda por configuração e proposta comercial; **valor final depende da cotação** |
 
-- **Totens interativos de informação** (comuns em aeroportos e shoppings) — bons para consultar informação estática, mas não guiam fisicamente o visitante até o destino.
-- **Aplicativo de mapa indoor do campus** — dispensa hardware físico, mas perde o acolhimento social que um robô oferece a um visitante inseguro.
-- **Pepper (SoftBank Robotics)**, usado em recepções comerciais — proposta muito parecida (recepcionar e guiar), mas é caro e não é sob medida para o layout da FEI.
+Esses robôs são **referências de projeto**, não concorrentes diretos comprovados no mercado de treinamento de torno CNC. Baxter já aparecia na apresentação; temi e TIAGo foram acrescentados para ampliar a comparação solicitada no template.
 
-A equipe considera o Pepper a referência mais próxima, mas acredita que um robô mais simples e barato (sem braços articulados) atende igualmente bem ao caso de uso do FEI Portas Abertas.
+### Alternativas tecnológicas de treinamento citadas pelo grupo
 
-</details>
+| Alternativa | Vantagens | Limitações percebidas | Relação com Mentor |
+|---|---|---|---|
+| **Simuladores de realidade virtual (ex.: iniciativas SENAI)** | Permitem repetição e treinamento sem expor inicialmente o aprendiz aos riscos físicos da máquina | A experiência ocorre em ambiente virtual, não substituindo integralmente o contato com o CNC real | Complemento possível antes da prática física |
+| **HoloLens com Dynamics 365 Guides** | Sobreposição de instruções ao ambiente físico, perto do ponto de execução | Uso de dispositivo na cabeça juntamente com EPI; adoção e suporte dependentes do fornecedor | O Mentor usa **projeção externa** para dispensar óculos de RA |
+| **Baxter instrutor de montagem — pesquisa acadêmica** | Demonstra interação instrucional por gestos, fala e elementos gráficos | Caso estudado em tarefa de montagem, não em CNC; plataforma de pesquisa, sem solução comercial específica | Referência conceitual para a combinação de fala e gesto |
+
+**Observação sobre o slide:** em novembro de 2026, o Dynamics 365 Guides ainda está em ciclo de encerramento. A Microsoft anunciou que o **fim do suporte e da operação ocorrerá em 31 de dezembro de 2026**; portanto, é mais preciso dizer “descontinuação anunciada” do que “já descontinuado”.
+
+### Experiência do usuário e modelos de negócio
+
+Em geral, a realidade virtual e a aumentada oferecem boas formas de visualizar procedimentos, mas dependem de equipamentos específicos. Robôs de serviço já interagem com pessoas, porém precisariam de adaptação para ensinar no CNC. O Mentor combina essas ideias em um roteiro de treinamento na máquina real.
+
+**Custos e modelos de negócio:** não há dados suficientes para afirmar que o Mentor seria mais barato. A implementação dependeria de plataforma física, projetor, adaptação ao CNC, programação, manutenção e atualização dos conteúdos. As soluções comparadas podem ser vendidas como equipamento, serviço ou projeto personalizado, por isso a comparação de preço dependeria de orçamentos reais.
+
+### Padrões, tendências e recomendações
+
+A principal tendência é aproximar a instrução do local onde a tarefa acontece. No Mentor, a prioridade deve ser **clareza e segurança**, não uma conversa livre. O ideal seria começar com um único módulo de treinamento validado, testar a projeção e oferecer sempre uma alternativa à comunicação por voz.
 
 ## Design do Robô
 
 ### Forma, função e affordances
 
-> 💡
-> - Pense nas características de affordances do seu robô. Que tipo de acessibilidades devem ser consideradas dentro do seu projeto?
-> - A aparência e o comportamento do robô **casam com a função**? Que affordances a forma sinaliza (olhos → enxergar, braços → pegar objetos, tela → interagir por toque)?
-> - Discuta o papel das expectativas do usuário no projeto de um robô. Onde faz sentido "**prometer menos e entregar mais**" (underpromise, overdeliver)?
+O croqui original do grupo apresenta um robô ereto, com **aproximadamente 1.450 mm de altura**, cabeça com **450 mm de largura**, base com **600 mm de largura**, cabeça com **300 mm de profundidade** na vista lateral, e linha dos olhos em aproximadamente **1.260 mm de altura**. O robô possui **base diferencial**, cabeça com dois olhos visuais, **câmera RGB-D**, **projetor**, um **braço apontador de 2 graus de liberdade sem garra**, **tablet de 10 polegadas**, **leitor de crachá**, **anel LED** e **botão de parada de emergência do próprio robô**. A nota de projeto limita sua velocidade máxima perto de pessoas a **0,5 m/s**; este valor é uma intenção de projeto, não uma velocidade validada para operação segura.
 
-<details>
-<summary>📄</summary>
+![Croqui técnico original do Mentor: vistas frontal e lateral](assets/mentor_croqui.png)
 
-O Rumo tem uma tela no "peito" (affordance de toque), uma "cabeça" com dois pontos luminosos (olhos) que sinalizam para onde está olhando, e **não** tem braços — o que sinaliza corretamente que ele não manipula objetos, apenas informa e guia. Para "prometer menos, entregar mais", o robô nunca é chamado de "assistente inteligente" nos materiais do evento, apenas de "guia do FEI Portas Abertas", evitando a expectativa de uma conversa livre e aberta.
+*Figura 1 — Croqui do robô Mentor, extraído do slide 10 da apresentação do grupo. Dimensões indicativas, em milímetros, sem validação de fabricação.*
 
-</details>
+As **affordances** são deliberadas: os olhos indicam direção da atenção; o braço sem garra indica **apontar, não agarrar ou operar**; o tablet convida à consulta e ao toque; o leitor de crachá marca o início de uma sessão; o projetor evidencia o componente demonstrado; o anel luminoso comunica estado. O botão físico deixa explícita a possibilidade de parar movimentos do Mentor. Uma regra essencial de **prometer menos e entregar mais** é apresentá-lo como **instrutor de roteiro assistido**, e não como especialista infalível ou robô capaz de operar o torno.
+
+Para acessibilidade, o texto deve acompanhar a fala, controles devem ser legíveis, as telas devem admitir ajuste de fonte/contraste e as funções essenciais não podem depender somente de cor, som ou reconhecimento de voz. O posicionamento da tela precisa considerar diferentes alturas e condições de mobilidade. A indicação luminosa não substitui instruções de segurança nem sinalizações regulamentares.
 
 ### Grau de antropomorfismo
 
-> 💡
-> - O seu robô tem um padrão com mais ou menos características antropomórficas (androide, humanoide, zoomórfico, minimalista, robject)? Marquem um ponto no espectro máquina ↔ humano e justifiquem.
-> - Qual padrão é mais aceito pela sociedade dentro do projeto que você está desenvolvendo?
-> - Como o grupo pretende evitar o **vale da estranheza** (uncanny valley), caso o robô tenha um design muito próximo do humano?
+No espectro **máquina → robject → minimalista → humanoide → androide → humano**, o Mentor ocupa a **faixa minimalista**, com elementos sociais suficientes para orientar atenção (olhos, gesto, aceno) sem simular um trabalhador humano. A ausência de mãos e rosto realista reduz a expectativa de manipulação, conversas irrestritas ou relações pessoais. A aparência condiz com um instrutor especializado e reduz o risco de **vale da estranheza**, associado a personagens quase humanos percebidos como artificiais.
 
-<details>
-<summary>📄</summary>
-
-O Rumo fica próximo do polo **minimalista** do espectro, com leve antropomorfismo (olhos, "cabeça" que gira), sem rosto detalhado nem fala emocional complexa — parecido com o Keepon citado na aula de Design. Justificativa: um design fortemente humano geraria expectativa de conversa fluida, que o robô não tem; pouco antropomorfismo, por outro lado, dificultaria que visitantes se sintam à vontade para abordá-lo. Por ficar longe do polo humano, o risco de vale da estranheza é baixo.
-
-</details>
+Isso também responde à preocupação de Valdir: um robô muito parecido com uma pessoa poderia passar a impressão de que pretende substituir o instrutor. O Mentor **não representa um novo empregado**, mas uma interface pedagógica móvel.
 
 ### Padrões de design
 
-> 💡
-> Identifique **2 padrões de design** (design patterns) aplicáveis ao seu projeto e explique como eles se **combinam**.
+O projeto utiliza dois padrões de interação apresentados na literatura de IHR:
 
-<details>
-<summary>📄</summary>
+1. **Comunicação didática (*didactic communication*):** apresenta uma ação, explica sua finalidade, mostra um exemplo e verifica se o aprendiz pode prosseguir.
+2. **Revezamento de turnos (*reciprocal turn-taking*, adaptado para o ensino):** alterna os turnos “o robô mostra” e “o aprendiz faz”, oferecendo silêncio durante a execução e feedback quando a ação termina.
 
-**"Apresentação inicial"** (o robô se apresenta brevemente antes de perguntar o destino) + **"em movimento junto"** (anda ao lado/à frente do grupo, ajustando o ritmo ao visitante mais lento) — combinados, formam o padrão composto de "robô guia turístico".
-
-</details>
+Na prática, é uma relação de **“mestre e aprendiz”**: o robô mostra, o operador faz e o instrutor humano avalia. Essa aplicação ao CNC foi proposta pelo grupo.
 
 ### Valores e ética
 
-> 💡
-> - Aplicando o **Value-Sensitive Design (VSD)** — a tecnologia deve se adaptar às necessidades humanas, não o contrário — identifique **1 a 2 valores** em jogo no seu projeto (privacidade, autonomia, segurança, inclusão, etc.).
-> - Identifique **1 risco ético** do seu robô e como o grupo pretende mitigá-lo.
+O projeto adota como valores centrais **segurança** e **privacidade**, sem deixar de considerar a autonomia do aprendiz e o respeito ao trabalho do instrutor.
 
-<details>
-<summary>📄</summary>
+- **Segurança:** o robô nunca deve aumentar o risco da operação. Não interage fisicamente com comandos da máquina, não autoriza partida, não supera intertravamentos e não substitui o responsável pela capacitação. Instruções operacionais são controladas por versão e aprovação.
+- **Privacidade:** o aprendiz precisa saber quais dados são registrados, para que finalidade e com quem poderão ser compartilhados. A proposta não conserva avaliações de emoção, expressões faciais ou gravações de voz como histórico individual.
 
-**Valores:** acessibilidade (o robô deve ajustar a velocidade para visitantes com mobilidade reduzida) e privacidade (não deve gravar ou reconhecer rostos sem consentimento).
+**Risco ético principal:** registros de erros, hesitações ou tempo de execução serem usados por RH ou gestão como indicadores punitivos, gerando pressão sobre trabalhadores em experiência. **Mitigação proposta:** coleta mínima para o acompanhamento pedagógico, acesso do aprendiz ao próprio histórico, política de retenção clara, visibilidade restrita aos responsáveis autorizados e separação entre feedback instrucional e critérios formais de avaliação. Decisões de aprovação permanecem com o instrutor humano.
 
-**Risco ético:** o robô poderia, sem querer, direcionar mais visitantes para cursos "badalados", reduzindo a visibilidade de cursos menos procurados. **Mitigação:** o menu de destinos sempre mostra todos os cursos na mesma ordem e tamanho, sem personalização por popularidade.
-
-</details>
+Pausas e erros podem indicar que o aprendiz precisa de ajuda, mas não permitem concluir seu estado emocional. Dados pessoais devem ser tratados conforme as regras aplicáveis, incluindo a LGPD.
 
 ### Protótipo no papel
 
-> 💡
-> Modele o seu robô com desenhos de formas primitivas (caixas, cilindros, esferas): forma, tamanho, rosto/olhos, partes móveis, tela. É o protótipo mais barato e rápido — lembre-se do lema "**teste cedo, teste sempre**".
->
-
-<details>
-<summary>📄</summary>
-
- Corpo afunilado sobre uma base omnidirecional (três rodas onidirecionais, em arranjo triangular); "cabeça" arredondada com dois olhos, uma antena/sensor no topo; tela na parte de cima do torso, com o nome do robô; sem braços — apenas um anel de luz na base para sinalizar status. Altura total ≈1,55 m; diâmetro da base ≈0,90 m.
-
-<img alt="Esboço do robô Rumo - V1'" src="rumo_esboco_v1.png" height="380"/>
-<img alt="Esboço do robô Rumo - V2'" src="rumo_esboco_v2.png" height="380"/>
-<img alt="Esboço do robô Rumo - V3'" src="rumo_esboco_v3.png" height="380"/>
-
-</details>
+O **croqui da Figura 1** é o protótipo em papel do grupo. Ele apresenta as vistas frontal e lateral e a posição dos componentes. Antes de construir o robô, ainda seriam necessários testes de estabilidade, alcance do braço, ergonomia, projeção e segurança de movimentação.
 
 ## Ações do robô
 
-> 💡
-> Para cada ação:
-> - Descreva a ação.
-> - Determine os pré-requisitos para que a ação aconteça
-> - Determine o que se espera que seja modificado no ambiente quando a ação é finalizada
-
-<details>
-<summary>📄</summary>
-
-**Guiar até o destino** — pré-requisito: destino escolhido no menu e caminho livre conhecido no mapa do dia. Ao finalizar: o visitante está fisicamente no laboratório e o robô retorna à posição de espera no saguão.
-
-**Dar informação rápida** — pré-requisito: pergunta reconhecida dentro do conjunto de perguntas frequentes cadastradas. Ao finalizar: a resposta foi falada e também exibida na tela.
-
-</details>
+| Ação | Pré-requisitos | Mudança esperada no ambiente/estado da tarefa | Limite e fallback |
+|---|---|---|---|
+| **Identificar aprendiz** | Sessão autorizada e crachá válido | Sessão do módulo certo é apresentada | Se não houver identificação válida, solicitar instrutor |
+| **Verificar EPI** | Aprendiz parado diante do robô; lista de EPIs válida para a etapa | Aprendiz confere/ajusta os itens sob orientação | A visão não certifica conformidade; validação humana quando exigida |
+| **Demonstrar etapa** | Etapa anterior concluída; versão do roteiro aprovada; condições do CNC verificadas | Aprendiz compreende a ação a ser realizada | Sem confirmação de estado seguro, não demonstrar execução prática |
+| **Apontar e projetar** | Alinhamento verificado; região da máquina identificada; área de movimento livre | Componente correto fica destacado visualmente | Se houver incerteza no alinhamento, retirar projeção e chamar instrutor |
+| **Acompanhar execução** | Aprendiz executando etapa autorizada; sensores em condições de funcionamento | Etapa identificada como concluída ou necessidade de revisão indicada | Não inferir segurança apenas por vídeo; leitura do CNC é informativa |
+| **Corrigir erro** | Divergência reconhecida em regra aprovada | Aprendiz recebe explicação e oportunidade de repetir | Dúvida fora do roteiro → suspensão e instrutor |
+| **Encerrar módulo** | Etapas previstas concluídas ou sessão interrompida | Resultado pedagógico exibido e instrutor solicitado | Conclusão no robô ≠ habilitação/autorização para trabalhar |
+| **Parar movimento do Mentor** | Botão do robô acionado ou condição de parada identificada | Mobilidade/gestos do Mentor cessam de maneira definida no projeto | A parada do Mentor não substitui a parada de emergência do CNC |
 
 ## Interações do robô
 
-### Espacial
+### Espacial — Entrega 4
 
-> 💡
-> - Descreva **onde** o robô se posiciona em relação ao usuário (distância e orientação do corpo), usando as **zonas de proxêmica** (Hall) e as **F-formations**.
-> - Como o robô **inicia** a interação (direção de aproximação) e como **sinaliza** para onde vai?
-> - Para cada interação espacial:
->   - Descreva a interação.
->   - Determine os pré-requisitos para que a interação aconteça.
->   - Determine a resposta emocional esperada do usuário quando a interação é finalizada.
-> - O que o robô faz ao encontrar pessoas **paradas, em conversa ou em grupo**, e ao passar por elas num corredor (sem cruzar entre pessoas conversando)?
-> - Proponha **um ajuste** desse comportamento espacial para um contexto de uso diferente do principal.
+O Mentor considera a **proxêmica de Hall** (distâncias entre pessoas) e as **F-formations** (posição das pessoas durante uma interação). A aproximação inicial é frontal, em baixa velocidade, com parada planejada a **aproximadamente 1,5 m** (zona social). Durante a explicação junto ao painel, utiliza uma formação lateral em **“L”**, a **aproximadamente 1 m**, somente se houver folga segura e sem obstruir zonas de operação. As distâncias são ideias iniciais do grupo e precisam ser testadas antes de qualquer uso real.
 
-<details>
-<summary>📄</summary>
+| Interação espacial | Pré-requisito | Comportamento | Resposta emocional desejada |
+|---|---|---|---|
+| **Acolher** | Aprendiz identificado, caminho livre, área segura | Aproximação lenta pela frente; cabeça orientada ao usuário; parada a ~1,5 m | Tranquilidade e previsibilidade |
+| **Ensinar junto ao painel** | Máquina e área em condição autorizada; posição livre ao lado | Forma um “L” com usuário e painel; mantém ~1 m quando possível, preservando rota de saída | Foco e sensação de acompanhamento sem invasão |
+| **Esperar execução** | Aprendiz no turno de execução | Recolhe gesto, estabiliza base e não invade o espaço de trabalho | Autonomia e menor distração |
+| **Contornar pessoas/grupos** | Área mapeada, obstáculos detectados | Reduz velocidade, aguarda abertura ou retorna ao ponto de espera; nunca passa entre pessoas que conversam | Confiança no respeito ao espaço social |
+| **Aguardar empilhadeira** | Tráfego percebido em área adjacente | Não cruza a rota; aguarda liberação conforme sinalização local | Percepção de prudência |
 
-- **Posicionamento:** aborda o grupo a uma distância social (2–3 m), sempre pela frente, nunca por trás.
-- **Início da aproximação:** aproxima-se em diagonal (nunca em linha reta "contra" a pessoa), reduzindo a velocidade a 1,5 m de distância.
-- **Sinalização de destino:** gira a "cabeça" na direção do laboratório antes de começar a andar.
-- **Grupos e corredores:** ao encontrar duas pessoas conversando, contorna por trás delas, sem passar entre as duas; para grupos maiores, aguarda uma abertura natural na formação.
-- **Ajuste de contexto:** em dias normais de aula (sem evento), o robô aumenta a distância de abordagem, já que há menos ruído social e mais espaço livre no saguão.
+**Na aproximação**, o Mentor olha na direção do usuário e se desloca devagar, sempre que possível pela frente. Não movimenta o braço perto de alguém e evita passar entre pessoas que estão conversando.
 
-</details>
+**Em outros ambientes**, o comportamento muda: numa sala grande, pode manter mais distância; numa sala pequena, é melhor ficar parado em um ponto definido. A segurança vem antes da movimentação.
 
-### Verbal
+### Verbal — Entrega 5
 
-> 💡
-> - A interação verbal do robô será **restrita** (comandos, FSM) ou **aberta** (LLM/chatbot)? Justifique a escolha.
-> - Para cada interação verbal:
->   - Descreva a interação.
->   - Determine os pré-requisitos para que a interação aconteça.
->   - Determine a resposta emocional esperada do usuário quando a interação é finalizada.
-> - Como o robô lida com o **timing** das respostas (silêncio, marcadores conversacionais como "uh-huh")?
-> - Que tipo de voz (TTS) o robô usa, e por que ela **combina** com a aparência e o propósito dele?
-> - Identifique **uma limitação** do reconhecimento de fala (ruído, sotaque, vocabulário) que afetaria o seu cenário de uso, e como mitigá-la.
+A fala do Mentor segue um **roteiro fechado**, revisado pelo instrutor. Não seria um chatbot com respostas livres: inventar ou esquecer um passo pode gerar risco em uma máquina. O robô reconhece comandos simples e responde somente dentro do conteúdo aprovado.
 
-<details>
-<summary>📄</summary>
+**Fluxo conversacional proposto:** `Boas-vindas → Conferência de EPI → Demonstração → Confirmação de entendimento → Execução silenciosa → Feedback → Próxima etapa / Repetição / Instrutor`.
 
-**Restrita** — usa uma árvore de diálogo (FSM) com um conjunto fechado de destinos e perguntas frequentes, pois o saguão é ruidoso e o vocabulário esperado é previsível; mais confiável do que abrir para um LLM.
+| Situação | Exemplo de fala do Mentor | Pré-requisito | Emoção/efeito esperado |
+|---|---|---|---|
+| **Início** | “Oi, Thiago! Eu sou o Mentor. Eu mostro, você faz.” | Crachá identificado | Acolhimento e clareza de papel |
+| **Conferência** | “Vamos conferir os EPIs previstos para esta etapa antes de começar.” | Lista aprovada disponível | Atenção e responsabilidade |
+| **Demonstração** | “Observe este controle. Vou destacar sua posição na máquina.” | Alinhamento da projeção validado | Segurança e foco |
+| **Pedido de repetição** | “Claro. Vou mostrar novamente, passo a passo.” | Solicitação reconhecida | Redução de constrangimento |
+| **Erro detectado** | “Vamos revisar esta etapa com calma. Veja novamente a indicação.” | Divergência reconhecida | Apoio, sem julgamento |
+| **Pedido fora do escopo** | “Não tenho uma orientação aprovada para isso. Vou chamar o instrutor.” | Dúvida não coberta | Confiança na honestidade do sistema |
+| **Fim** | “Concluímos esta parte do treino. O instrutor fará a avaliação final.” | Módulo finalizado | Clareza sobre responsabilidades |
 
-**Timing:** ao processar um pedido, o robô emite um "hum" sonoro curto e pisca os olhos em sequência, evitando silêncio constrangedor.
+**Ritmo da conversa:** frases curtas, voz adulta e calma e tempo para o aprendiz ler. **Enquanto a pessoa executa a etapa, o Mentor fica em silêncio.** Se ela demora, pode perguntar “Precisa de mais tempo?” sem pressupor que houve erro.
 
-**Voz:** TTS de tom jovem e neutro, volume ajustável ao ruído do saguão — combina com o porte pequeno do robô (uma voz grave soaria estranha).
+**Limitações:** o barulho e o protetor auricular podem atrapalhar a voz. Por isso, o tablet terá botões grandes e legendas. Quando não compreender uma solicitação, o robô pede confirmação; se a dúvida continuar, chama o instrutor.
 
-**Limitação do ASR:** o ruído do evento atrapalha o reconhecimento de nomes de professores e disciplinas. **Mitigação:** escolhas críticas (curso, laboratório) são feitas por toque na tela; o reconhecimento de fala só é usado para perguntas simples de sim/não.
+### Não verbal — Entrega 6
 
-</details>
+Os canais principais são **olhar** e **gesto**, apoiados pelo uso de **luz/projeção** e acenos simplificados.
 
-### Não-verbal
+| Canal | Pré-requisito | Comportamento do robô | Resposta emocional esperada |
+|---|---|---|---|
+| **Olhar/direção da cabeça** | Usuário e elemento de ensino identificados | Olhos da tela alternam atenção do aprendiz para o componente indicado | Entendimento do foco conjunto |
+| **Apontamento do braço** | Campo livre e componente validado | Braço de 2 GDL aponta sem encostar ou agarrar | Clareza da instrução sem sensação de ameaça |
+| **Confirmação por aceno** | Conclusão da etapa verificada | Movimento discreto de cabeça e sinal visual de sucesso | Reconhecimento do progresso |
+| **Projeção localizada** | Calibração segura e posição correta confirmada | Região do controle é iluminada; sem tocar nem comandar a máquina | Menor esforço de localização |
+| **Sinalização de pausa/erro** | Divergência conhecida ou interrupção necessária | O robô imobiliza gestos e exibe mensagem; evita sinais ambíguos | Entendimento de que é necessário aguardar |
 
-> 💡
-> - Escolha **dois canais** não verbais (olhar, gesto, toque, postura, ritmo, imitação) e descreva como o robô os usaria.
-> - Para cada interação não-verbal:
->   - Descreva a interação.
->   - Determine os pré-requisitos para que a interação aconteça.
->   - Determine a resposta emocional esperada do usuário quando a interação é finalizada.
-> - Explique como o robô **perceberia** as pistas não verbais correspondentes da pessoa.
-> - Descreva um caso em que a **falta de coordenação** entre fala e comportamento não verbal quebraria a interação.
-> - Proponha **uma pista não verbal exclusiva** do robô (sem equivalente humano direto) que ajudaria na comunicação.
+**O que o robô observa:** presença do aprendiz, posição geral do corpo, pausas e repetição de passos. Isso pode indicar necessidade de ajuda, mas **não permite afirmar o que a pessoa está sentindo**.
 
-<details>
-<summary>📄</summary>
+**Coordenação entre canais:** fala, gesto e projeção precisam indicar o mesmo ponto. Se o robô disser uma coisa e apontar outra, o aprendiz pode se confundir. Nessa situação, a demonstração deve parar e o instrutor deve ser chamado.
 
-**Canais escolhidos: olhar e postura.**
-- **Olhar:** os "olhos" de LED giram na direção de quem está falando com o robô e na direção da rota a seguir.
-- **Postura:** o corpo se inclina levemente para frente ao iniciar a aproximação (convite) e se afasta/gira de lado ao encerrar a interação (despedida).
-
-**Percepção:** uma câmera de profundidade detecta se a pessoa está olhando para o robô (atenção) e se está parada olhando ao redor (sinal de estar perdida).
-
-**Falta de coordenação:** se o robô disser "vamos ao laboratório de robótica" mas girar para o lado errado, o grupo hesita e para de segui-lo — a confiança se quebra.
-
-**Pista exclusiva do robô:** um anel de luz na base pisca em verde quando o robô está confiante do caminho e em amarelo quando está recalculando a rota — sem equivalente humano direto, mas comunica incerteza de forma clara.
-
-</details>
+**Recurso próprio do Mentor:** a projeção de luz diretamente no componente, junto da fala, é seu principal diferencial. O anel LED complementa o aviso, mas a informação também aparece em texto para não depender somente de cores.
 
 ## Emoção
 
-> 💡
-> - Escolha um **modelo de emoção** (categorias básicas de Ekman, modelo OCC ou modelo dimensional — Russell ou PAD) e justifique a escolha para o seu caso de uso.
-> - Descreva **como** o robô perceberia o estado emocional do usuário, e por quais canais (rosto, voz, postura, outro).
-> - Defina **quando** o robô deve mimetizar a emoção da pessoa e **quando não deve** (lembre-se da exceção da raiva — retribuir raiva raramente ajuda a resolver o conflito).
-> - Identifique um risco de **gerenciamento de expectativas**: se o robô parece emocionalmente responsivo, que outras capacidades sociais o usuário passa a esperar dele? O robô consegue cumprir essa expectativa?
+Para pensar nas emoções durante o treino, o grupo utilizou o **modelo de Russell**, baseado em duas dimensões: **valência** (sensação agradável ou desagradável) e **ativação** (intensidade da reação). Isso ajuda a planejar respostas para momentos de frustração, ansiedade, tédio ou entusiasmo.
 
-<details>
-<summary>📄</summary>
+**Possíveis sinais:** demora para iniciar uma etapa, erros repetidos e mudança no tom de voz. Como esses sinais podem ter várias causas, o Mentor **não tenta diagnosticar emoções**. Ele apenas oferece ajuda: “Quer rever esta etapa?”.
 
-**Modelo:** categorias básicas de Ekman (feliz, surpreso, neutro) — simples o suficiente para expressar por luzes e tom de voz, sem exigir um rosto detalhado.
+**Quando acompanhar a emoção:** após um acerto, pode acenar com a cabeça e usar luz verde. **Quando não acompanhar:** diante de irritação ou medo, continua calmo, fala devagar e oferece uma pausa. A ideia não é fingir sentimentos humanos, mas agir de modo respeitoso.
 
-**Percepção:** o robô reconhece tom de voz alterado (frustração) pelo microfone e expressões faciais básicas pela câmera, para saber se o visitante está confuso ou satisfeito.
+**Limites da relação:** o Mentor não é amigo, conselheiro ou representante do RH. Ele apenas orienta o treinamento. O robô também não deve guardar avaliações emocionais sobre o aprendiz.
 
-**Mimetismo:** mimetiza entusiasmo — se o visitante se anima ao ver o laboratório de robótica, o robô "sorri" com as luzes — mas **nunca** mimetiza a impaciência de um visitante apressado; nesse caso mantém tom calmo e oferece um caminho mais curto.
+## Considerações finais
 
-**Risco de expectativa:** se o robô demonstra "empolgação", visitantes podem esperar que ele converse sobre assuntos abertos (ex.: "e as notas de corte?"). O robô precisa deixar claro, de forma simpática, quando um assunto está fora do seu escopo.
+O Mentor busca tornar o treinamento inicial no torno CNC **mais claro, paciente e padronizado**, sem retirar a importância do instrutor humano. A proposta combina fala, gestos, projeção e deslocamento cuidadoso para acompanhar o aprendiz. Como ainda é um projeto conceitual, as próximas etapas seriam validar o conteúdo técnico, testar a interação e avaliar a segurança do robô em um ambiente real.
 
-</details>
+## Referências
 
----                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-[^1]: Fonte: Adaptado de <https://hazeshift.com.br/mapa-de-empatia/>
+1. **BRASIL. Ministério do Trabalho e Emprego.** *Norma Regulamentadora nº 12 — Segurança no Trabalho em Máquinas e Equipamentos*. Disponível em: https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-12-nr-12. Acesso em: 11 nov. 2026.
+2. **KAHN, Peter H., Jr. et al.** *Design Patterns for Sociality in Human-Robot Interaction*. HRI '08, 2008. Disponível em: https://www.cs.cmu.edu/~illah/CLASSDOCS/kahn.pdf.
+3. **QUITTER, Thomas et al.** *Humanoid Robot Instructors for Industrial Assembly Tasks*. HAI '17, 2017. DOI: https://doi.org/10.1145/3125739.3125760.
+4. **RUSSELL, James A.** *A Circumplex Model of Affect*. Journal of Personality and Social Psychology, v. 39, n. 6, p. 1161–1178, 1980. DOI: https://doi.org/10.1037/h0077714.
+5. **MICROSOFT.** *Dynamics 365 Guides and Remote Assist reaching end of support on December 31, 2026*. Disponível em: https://learn.microsoft.com/pt-br/lifecycle/announcements/dynamics-365-guides-remote-assist-end-of-support. Acesso em: 11 nov. 2026.
+6. **TEMI.** *temi Robots; Become a temi Developer*. Disponível em: https://www.robotemi.com/robots/ e https://www.robotemi.com/developers/. Acesso em: 11 nov. 2026.
+7. **PAL ROBOTICS.** *TIAGo Mobile Manipulator Robot; Education*. Disponível em: https://pal-robotics.com/robot/tiago/ e https://pal-robotics.com/areas/education/. Acesso em: 11 nov. 2026.
+8. **HAZESHIFT.** *Mapa de empatia*. Disponível em: https://hazeshift.com.br/mapa-de-empatia/. Fonte de apoio ao instrumento de empatia citado na apresentação do grupo.
+9. **CENTRO UNIVERSITÁRIO FEI.** *Template de projeto de Interação Humano-Robô*. Disponível em: https://github.com/FagnerPimentel-Academic/template-ihr. Acesso em: 11 nov. 2026.
+
