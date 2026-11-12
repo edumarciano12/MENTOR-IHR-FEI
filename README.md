@@ -179,7 +179,7 @@ A principal tendência é aproximar a instrução do local onde a tarefa acontec
 
 O croqui original do grupo apresenta um robô ereto, com **aproximadamente 1.450 mm de altura**, cabeça com **450 mm de largura**, base com **600 mm de largura**, cabeça com **300 mm de profundidade** na vista lateral, e linha dos olhos em aproximadamente **1.260 mm de altura**. O robô possui **base diferencial**, cabeça com dois olhos visuais, **câmera RGB-D**, **projetor**, um **braço apontador de 2 graus de liberdade sem garra**, **tablet de 10 polegadas**, **leitor de crachá**, **anel LED** e **botão de parada de emergência do próprio robô**. A nota de projeto limita sua velocidade máxima perto de pessoas a **0,5 m/s**; este valor é uma intenção de projeto, não uma velocidade validada para operação segura.
 
-![Croqui técnico original do Mentor: vistas frontal e lateral](assets/mentor_croqui.png)
+![Croqui do robô Mentor](mentor_croqui.png)
 
 *Figura 1 — Croqui do robô Mentor, extraído do slide 10 da apresentação do grupo. Dimensões indicativas, em milímetros, sem validação de fabricação.*
 
